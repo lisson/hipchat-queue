@@ -1,0 +1,9 @@
+[Hipchat]
+URL: http://hipchat.lan
+# User that has admin_room privileges
+user_key:
+
+[Room]
+ID: 
+# key that allows your integration to post back to the room
+key:
