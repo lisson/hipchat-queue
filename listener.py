@@ -54,7 +54,8 @@ if __name__ == "__main__":
             user = json['item']['message']['from']['name']
             q = queue.push(message,user)
             if (q != None):
-                h.send_message("(boom)")
+                message = ("(boom) {} {} {} {}".format(*q))
+                h.send_message(message)
         return "OK"
 
     app.run(host="0.0.0.0", port=5000)
