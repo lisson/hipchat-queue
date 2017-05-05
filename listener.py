@@ -22,6 +22,9 @@ class QueueManager(object):
             if name not in self.queue:
                 self.queue.append(name)
                 self.queue_index = self.queue_index+1
+        else:
+            self.queue = []
+            self.queue_index = 1
         if(self.queue_index == 4):
             q = self.queue
             self.queue = []
