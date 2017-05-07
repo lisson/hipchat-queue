@@ -18,7 +18,7 @@ class QueueManager(object):
             self.queue = []
             self.queue.append(name)
             self.queue_index = 1
-        if(index == self.queue_index+1):
+        elif(index == self.queue_index+1):
             if name not in self.queue:
                 self.queue.append(name)
                 self.queue_index = self.queue_index+1
